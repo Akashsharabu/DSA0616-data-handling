@@ -1,0 +1,9 @@
+library(ggplot2)
+heightweightdata=data.frame(
+  weight=c(60,65,70,72,75),
+  height=c(170,175,168,180,178)
+)
+
+ggplot(heightweightdata,aes(x=weight,y=height))+ 
+  geom_point(color="red",size=3)+
+  labs(x="weight(kg)", y="height", title = ("weight vs height"))
